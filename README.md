@@ -1,2 +1,2 @@
-# fearless-items
+# Items
 RESTful Ruby on Rails Web API serving up items
