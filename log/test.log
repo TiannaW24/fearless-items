@@ -67,3 +67,247 @@
   [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mTRUNCATE TABLE "items"[0m
+  [1m[35m (4.4ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'items';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mTRUNCATE TABLE "items"[0m
+  [1m[35m (12.3ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'items';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mTRUNCATE TABLE "items"[0m
+  [1m[35m (12.8ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.4ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'items';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mTRUNCATE TABLE "items"[0m
+  [1m[35m (4.5ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'items';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Originals"], ["created_at", "2021-04-01 02:51:15.078016"], ["updated_at", "2021-04-01 02:51:15.078016"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "HITNRUN Phase One"], ["created_at", "2021-04-01 02:51:15.079719"], ["updated_at", "2021-04-01 02:51:15.079719"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "MPLSoUND"], ["created_at", "2021-04-01 02:51:15.080519"], ["updated_at", "2021-04-01 02:51:15.080519"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.0ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Originals"], ["created_at", "2021-04-01 02:51:15.081299"], ["updated_at", "2021-04-01 02:51:15.081299"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.0ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "The Rainbow Children"], ["created_at", "2021-04-01 02:51:15.082044"], ["updated_at", "2021-04-01 02:51:15.082044"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/items" for 127.0.0.1 at 2021-03-31 22:51:15 -0400
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "LOtUSFLOW3R"], ["created_at", "2021-04-01 02:51:15.106611"], ["updated_at", "2021-04-01 02:51:15.106611"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "HITNRUN Phase One"], ["created_at", "2021-04-01 02:51:15.107975"], ["updated_at", "2021-04-01 02:51:15.107975"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "One Nite Alone..."], ["created_at", "2021-04-01 02:51:15.108856"], ["updated_at", "2021-04-01 02:51:15.108856"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Graffiti Bridge"], ["created_at", "2021-04-01 02:51:15.109663"], ["updated_at", "2021-04-01 02:51:15.109663"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.0ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "N.E.W.S"], ["created_at", "2021-04-01 02:51:15.110467"], ["updated_at", "2021-04-01 02:51:15.110467"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/items" for 127.0.0.1 at 2021-03-31 22:51:15 -0400
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "The Gold Experience"], ["created_at", "2021-04-01 02:51:15.124904"], ["updated_at", "2021-04-01 02:51:15.124904"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "The Black Album"], ["created_at", "2021-04-01 02:51:15.126368"], ["updated_at", "2021-04-01 02:51:15.126368"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "20Ten"], ["created_at", "2021-04-01 02:51:15.127564"], ["updated_at", "2021-04-01 02:51:15.127564"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "ART OFFICIAL AGE"], ["created_at", "2021-04-01 02:51:15.128452"], ["updated_at", "2021-04-01 02:51:15.128452"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "For You"], ["created_at", "2021-04-01 02:51:15.129281"], ["updated_at", "2021-04-01 02:51:15.129281"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/items/1" for 127.0.0.1 at 2021-03-31 22:51:15 -0400
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Around The World In A Day"], ["created_at", "2021-04-01 02:51:15.142404"], ["updated_at", "2021-04-01 02:51:15.142404"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "The Chocolate Invasion"], ["created_at", "2021-04-01 02:51:15.143789"], ["updated_at", "2021-04-01 02:51:15.143789"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Chaos And Disorder"], ["created_at", "2021-04-01 02:51:15.144665"], ["updated_at", "2021-04-01 02:51:15.144665"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "LOtUSFLOW3R"], ["created_at", "2021-04-01 02:51:15.145748"], ["updated_at", "2021-04-01 02:51:15.145748"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Come"], ["created_at", "2021-04-01 02:51:15.146657"], ["updated_at", "2021-04-01 02:51:15.146657"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/items/1" for 127.0.0.1 at 2021-03-31 22:51:15 -0400
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Emancipation"], ["created_at", "2021-04-01 02:51:15.159442"], ["updated_at", "2021-04-01 02:51:15.159442"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "The Gold Experience"], ["created_at", "2021-04-01 02:51:15.160934"], ["updated_at", "2021-04-01 02:51:15.160934"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Chaos And Disorder"], ["created_at", "2021-04-01 02:51:15.161779"], ["updated_at", "2021-04-01 02:51:15.161779"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "N.E.W.S"], ["created_at", "2021-04-01 02:51:15.162695"], ["updated_at", "2021-04-01 02:51:15.162695"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "LOtUSFLOW3R"], ["created_at", "2021-04-01 02:51:15.163813"], ["updated_at", "2021-04-01 02:51:15.163813"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/items/200" for 127.0.0.1 at 2021-03-31 22:51:15 -0400
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "MPLSoUND"], ["created_at", "2021-04-01 02:51:15.177222"], ["updated_at", "2021-04-01 02:51:15.177222"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "The Chocolate Invasion"], ["created_at", "2021-04-01 02:51:15.178664"], ["updated_at", "2021-04-01 02:51:15.178664"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "MPLSoUND"], ["created_at", "2021-04-01 02:51:15.179682"], ["updated_at", "2021-04-01 02:51:15.179682"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Lovesexy"], ["created_at", "2021-04-01 02:51:15.180547"], ["updated_at", "2021-04-01 02:51:15.180547"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "One Nite Alone..."], ["created_at", "2021-04-01 02:51:15.181376"], ["updated_at", "2021-04-01 02:51:15.181376"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/items" for 127.0.0.1 at 2021-03-31 22:51:15 -0400
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "MPLSoUND"], ["created_at", "2021-04-01 02:51:15.194671"], ["updated_at", "2021-04-01 02:51:15.194671"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Emancipation"], ["created_at", "2021-04-01 02:51:15.196623"], ["updated_at", "2021-04-01 02:51:15.196623"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "O(+>"], ["created_at", "2021-04-01 02:51:15.197531"], ["updated_at", "2021-04-01 02:51:15.197531"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "MPLSoUND"], ["created_at", "2021-04-01 02:51:15.198398"], ["updated_at", "2021-04-01 02:51:15.198398"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Planet Earth"], ["created_at", "2021-04-01 02:51:15.199244"], ["updated_at", "2021-04-01 02:51:15.199244"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/items" for 127.0.0.1 at 2021-03-31 22:51:15 -0400
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Chaos And Disorder"], ["created_at", "2021-04-01 02:51:15.212428"], ["updated_at", "2021-04-01 02:51:15.212428"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Dirty Mind"], ["created_at", "2021-04-01 02:51:15.213913"], ["updated_at", "2021-04-01 02:51:15.213913"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Sign O' The Times"], ["created_at", "2021-04-01 02:51:15.214792"], ["updated_at", "2021-04-01 02:51:15.214792"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Rave Un2 the Joy Fantastic"], ["created_at", "2021-04-01 02:51:15.215649"], ["updated_at", "2021-04-01 02:51:15.215649"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Around The World In A Day"], ["created_at", "2021-04-01 02:51:15.216516"], ["updated_at", "2021-04-01 02:51:15.216516"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/items" for 127.0.0.1 at 2021-03-31 22:51:15 -0400
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "One Nite Alone..."], ["created_at", "2021-04-01 02:51:15.230371"], ["updated_at", "2021-04-01 02:51:15.230371"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "C-Note"], ["created_at", "2021-04-01 02:51:15.231929"], ["updated_at", "2021-04-01 02:51:15.231929"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Chaos And Disorder"], ["created_at", "2021-04-01 02:51:15.232835"], ["updated_at", "2021-04-01 02:51:15.232835"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Emancipation"], ["created_at", "2021-04-01 02:51:15.233823"], ["updated_at", "2021-04-01 02:51:15.233823"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Originals"], ["created_at", "2021-04-01 02:51:15.234704"], ["updated_at", "2021-04-01 02:51:15.234704"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PUT "/items" for 127.0.0.1 at 2021-03-31 22:51:15 -0400
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Piano and a Microphone 1983"], ["created_at", "2021-04-01 02:51:15.247385"], ["updated_at", "2021-04-01 02:51:15.247385"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Controversy"], ["created_at", "2021-04-01 02:51:15.248894"], ["updated_at", "2021-04-01 02:51:15.248894"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "The Rainbow Children"], ["created_at", "2021-04-01 02:51:15.249794"], ["updated_at", "2021-04-01 02:51:15.249794"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Piano and a Microphone 1983"], ["created_at", "2021-04-01 02:51:15.250647"], ["updated_at", "2021-04-01 02:51:15.250647"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mItem Create (0.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Chaos And Disorder"], ["created_at", "2021-04-01 02:51:15.251472"], ["updated_at", "2021-04-01 02:51:15.251472"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/items/1" for 127.0.0.1 at 2021-03-31 22:51:15 -0400
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[31mrollback transaction[0m
