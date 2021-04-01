@@ -6,27 +6,37 @@ The Items API provides several RESTful endpoints to retrieve, add, and delete It
 
 These instructions will get you a copy of the application up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the Items application.
 
-#### Prerequisites
+#### Built With
 
-* Docker v20.10.5
-    * Ruby v.3.0.0
-    * Rails v.6.1.3.1
+* Docker v20.10.5 - required 
+* Docker-Compose v1.28.5 - required
+* Ruby v3.0.0
+* Rails v6.1.3.1
 
-#### Database Setup
+#### Database and Application Setup
 
-The Items application uses in-memory cacheing to store the Items, a separate database is not required.
+The application is containerized using Docker and served on port 3000. Specifications for the Docker container, including required installations can be found in the Dockerfile.
 
-#### Application Setup
+Postgres is the database used to store the Items and is served on port 5432. 
 
-The Items application is containerized using a Docker image, served on port 3000. Specifications for the Docker container, including required installations can be found in the Dockerfile.
+To change the ports either service is served up on, update the port values in the Dockerfile and docker-compose.yml file. 
+
+Both the web app and Postgres service are managed as individual services by docker-compose. Follow the steps below to build the two services required for the application.
+
+1. Build the two services (web & postgresql) using docker-compose
+```docker-compose build```
+
+2. Initial DB migration
+```docker-compose run web rails db:migrate```
+
+3. Bring up the app
+```docker-compose up```
 
 ## Unit Tests
 
-The application uses Rspec for unit testing
+The application uses Rspec for unit testing.
 
 To run the unit tests, use the following command ```bundle exec rspec```
-
-## Deployment
 
 
 ## Releases
@@ -34,6 +44,7 @@ To run the unit tests, use the following command ```bundle exec rspec```
     * Initial application creation with ability to show, add, update, and destroy Items
 
 ## Future Features
+* Implement several additional environments for testing, staging and production
 * Implement endpoint versioning
 * Implement authentication to prevent unauthorized access to the api
-* Implement a Swagger interface to document endpoint specification and generate test cases
+* Implement a Swagger interface to document endpoint specifications and generate test cases
