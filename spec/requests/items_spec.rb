@@ -60,6 +60,20 @@ describe 'POST /items' do
     end
   end
 
+  # Test the PUT endpoint /items/:id
+  describe 'PUT /items/:id' do
+    let(:items_attributes) { { name: 'Prince' } }
+
+    context 'when the record exists' do
+      before { put "/items/#{item_id}", params: items_attributes }
+
+      it 'updates the record and returns a 204' do
+        expect(response.body).to be_empty
+        expect(response).to have_http_status(204)
+      end
+    end
+  end
+
   # Test the DELETE endpoint for /items/:id
   describe 'DELETE /items/:id' do
     before { delete "/items/#{item_id}" }

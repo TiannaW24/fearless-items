@@ -57,6 +57,8 @@ build-iPhoneSimulator/
 
 # Log files
 log/development.log
+log/test.log
 
 #sqlite
 db/development.sqlite3
+db/test.sqlite3
