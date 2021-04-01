@@ -48,3 +48,4 @@ To run the unit tests, use the following command ```bundle exec rspec```
 * Implement endpoint versioning
 * Implement authentication to prevent unauthorized access to the api
 * Implement a Swagger interface to document endpoint specifications and generate test cases
+* Add PR build checks that use Rubocop and unit tests to determine whether or not the PR can be merged
