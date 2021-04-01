@@ -10,12 +10,9 @@ RSpec.describe 'Items API', type: :request do
   describe 'GET /items' do
     before { get '/items' } # Hit the endpoint
 
-    it 'returns all items' do
+    it 'returns all items and a 200' do
       expect(JSON.parse(response.body)).not_to be_empty
       expect(JSON.parse(response.body).size).to eq(5)
-    end
-
-    it 'returns status code 200' do
       expect(response).to have_http_status(200)
     end
   end
@@ -25,12 +22,9 @@ RSpec.describe 'Items API', type: :request do
     before { get "/items/#{item_id}" }
 
     context 'when the record exists' do
-      it 'returns the item' do
+      it 'returns the item and a 200' do
         expect(JSON.parse(response.body)).not_to be_empty
         expect(JSON.parse(response.body)['id']).to eq(item_id)
-      end
-
-      it 'returns status code 200' do
         expect(response).to have_http_status(200)
       end
     end
@@ -40,37 +34,28 @@ RSpec.describe 'Items API', type: :request do
 
       it 'returns status code 404 and a human-readable error message' do
         expect(response).to have_http_status(404)
-        expect(response.body).to match(/Couldn't find Item with that id/)
+        expect(response.body).to match("{\"message\":\"Couldn't find Item with 'id'=#{200}\"}")
       end
     end
   end
 
-  # Test the PUT endpoint for /items/:id
-  describe 'PUT /items' do
-    let(:item_attributes) { { name: 'Purple Rain' } }
-
+# Test the POST endpoint for /items
+describe 'POST /items' do
     context 'when the request is valid' do
-      before { put '/items', params: item_attributes }
+      before { post '/items', params: { name: 'Purple Rain'} }
 
-      it 'creates a item' do
+      it 'creates an item and returns a 201' do
         expect(JSON.parse(response.body)['name']).to eq('Purple Rain')
-      end
-
-      it 'returns status code 201' do
         expect(response).to have_http_status(201)
       end
     end
 
     context 'when the request is invalid' do
-      before { put '/items', params: { title: 'Foobar' } }
+      before { post '/items', params: { fake: 'Prince' } }
 
-      it 'returns status code 422' do
+      it 'returns status code 422 and a human-readable error message' do
         expect(response).to have_http_status(422)
-      end
-
-      it 'returns a validation failure message' do
-        expect(response.body)
-          .to match(/Validation failed: Created by can't be blank/)
+        expect(response.body).to match("{\"message\":\"Validation failed: Name can't be blank\"}")
       end
     end
   end
